@@ -1,0 +1,44 @@
+//MIXINS
+=flex($flexDir, $align, $justify)
+  display: flex !important
+  flex-direction: $flexDir
+  align-items: $align
+  justify-content: $justify
+
+  @content
+
+=grid($gridType, $rows, $columns)
+  display: $gridType !important
+  grid-template-rows: $rows
+  grid-template-columns: $columns
+
+  @content
+
+=setBkgImg($url, $pos, $size)
+  background:
+    image: url("#{$url}")
+    size: $size
+    repeat: no-repeat
+    position: $pos
+
+  @content
+
+=setBtnBkgAndHover($color)
+  background-color: $color
+
+  &:hover
+    background-color: darken($color, 5%)
+
+=transition($type, $duration, $timing, $delay)
+  transition: $type $duration $timing $delay
+
+=animation($name, $duration, $timing, $delay, $count, $direction)
+  animation: $name, $duration, $timing, $delay, $count, $direction
+
+  @content
+
+=hocus
+  &:hover,
+  &:active,
+  &:focus
+    @content

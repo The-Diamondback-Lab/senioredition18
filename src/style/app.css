@@ -1,0 +1,48 @@
+@import url(../normalize.min.css);
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,600i,700");
+/* HELPER CLASSES -- HELPERS.SASS */
+.wrapper {
+  height: 100%;
+  width: 100%;
+  max-width: 95%; }
+
+/* BEGIN BASE STYLES -- BASE-DIR.SASS */
+/* COMMON STYLES -- COMMON.SASS */
+* {
+  -webkit-transition: all 0.25s ease-in-out 0s;
+  transition: all 0.25s ease-in-out 0s; }
+
+*,
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+::-webkit-scrollbar {
+  display: none; }
+
+html, body {
+  font-family: "Source Sans Pro";
+  color: #252525;
+  margin: 0; }
+
+h1, h2, h3, h4, h5, h6, ol, ul {
+  font-weight: 700; }
+
+p, a, li {
+  font-weight: 400; }
+
+a:hover, a:active, a:focus, button:hover, button:active, button:focus {
+  cursor: pointer; }
+
+a {
+  text-decoration: none; }
+  a:hover, a:active, a:focus {
+    font-weight: 600; }
+
+button {
+  border: none;
+  outline: none; }
+
+/* FONTS - FONTS.SASS */
+/* BEGIN COMPONENT STYLES -- COMPONENTS-DIR.SASS */
+/* BEGIN VIEW SPECIFIC STYLES -- VIEWS-DIR.SASS */
