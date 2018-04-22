@@ -7,13 +7,6 @@
 
   @content
 
-=grid($gridType, $rows, $columns)
-  display: $gridType !important
-  grid-template-rows: $rows
-  grid-template-columns: $columns
-
-  @content
-
 =setBkgImg($url, $pos, $size)
   background:
     image: url("#{$url}")
@@ -23,22 +16,17 @@
 
   @content
 
-=setBtnBkgAndHover($color)
-  background-color: $color
-
-  &:hover
-    background-color: darken($color, 5%)
-
-=transition($type, $duration, $timing, $delay)
-  transition: $type $duration $timing $delay
-
-=animation($name, $duration, $timing, $delay, $count, $direction)
-  animation: $name, $duration, $timing, $delay, $count, $direction
-
-  @content
-
 =hocus
   &:hover,
   &:active,
   &:focus
     @content
+
+=setBtnBkgAndHover($color)
+  background-color: $color
+
+  +hocus
+    background-color: darken($color, 5%)
+
+=transition($type, $duration, $timing, $delay)
+  transition: $type $duration $timing $delay

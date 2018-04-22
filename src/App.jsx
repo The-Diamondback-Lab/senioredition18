@@ -1,11 +1,5 @@
 //react imports
-import React, { Component } from 'react';
-
-//react-router imports
-import { BrowserRouter, Route } from 'react-router-dom';
-
-//config imports
-import * as routes from './config/routes.js';
+import React from 'react';
 
 //google analytics
 import Analytics from 'react-router-ga';
@@ -14,20 +8,17 @@ import Analytics from 'react-router-ga';
 import './style/normalize.min.css';
 import './style/app.min.css';
 
-class App extends Component {
-  render() {
-    return (
-      <BrowserRouter>
-        <Analytics id="UA-116382668-1" debug>
-          <div className="app-container">
-            <p>
-              To get started, edit <code>src/App.js</code> and save to reload.
-            </p>
-          </div>
-        </Analytics>
-      </BrowserRouter>
-    );
-  }
-}
+//view imports
+import Splash from './views/Splash.jsx';
+import Stories from './views/Stories.jsx';
+
+const App = () => {
+  return (
+    <div id="app-container">
+      <Splash />
+      <Stories />
+    </div>
+  );
+};
 
 export default App;

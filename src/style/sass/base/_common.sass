@@ -1,21 +1,26 @@
 /* COMMON STYLES -- COMMON.SASS */
 
+
+*, html
+  box-sizing: border-box
+
+html, body
+  margin: 0
+
 *
   +transition(all, .25s, ease-in-out, 0s)
 
-*,
-html
-  box-sizing: border-box
+body
+  font-family: $font
+  color: $black
 
 ::-webkit-scrollbar
   display: none
 
-html, body
-  font-family: $font
-  color: $black
-  margin: 0
-
-h1, h2, h3, h4, h5, h6, ol, ul
+h1
+  font-weight: 900
+  
+h2, h3, h4, h5, h6, ol, ul
   font-weight: 700
 
 p, a, li
@@ -24,10 +29,10 @@ p, a, li
 a, button
  +hocus
     cursor: pointer
+    font-weight: 600
+
 a
   text-decoration: none
-  +hocus
-    font-weight: 600
 
 button
   border: none
