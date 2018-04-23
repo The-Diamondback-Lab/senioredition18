@@ -10,6 +10,7 @@
     "react-scripts": "1.1.4"
   },
   "devDependencies": {
+    "firebase": "^4.13.1",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-autoprefixer": "^4.1.0",
     "gulp-concat": "^2.6.1",
