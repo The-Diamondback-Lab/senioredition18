@@ -1,0 +1,117 @@
+/* STORY BLOCK STYLES - STORYBLOCK.SASS */
+
+%story-block
+  border: 5px solid $black
+  border-radius: .5em
+  margin: .75em 0
+  width: 100%
+  
+  figcaption
+    +flex(column, stretch, flex-start)
+    margin: 0
+    @media all and (max-width: 940px) 
+      height: 60% !important
+      width: 100% !important
+
+    @media all and (max-width: 450px) 
+      padding-top: .25em
+
+    .story-block-heading
+      color: $dbk-red
+      margin: 0
+
+    .story-block-author
+      margin: .375em 0 1em
+      
+    .story-block-blurb
+      color: rgba($black, .5)
+      margin: 0
+
+      a
+        color: $dbk-red
+        font-weight: 600
+
+      span
+        color: $black
+        margin-bottom: -1em
+        font-weight: 700
+
+    button
+      align-self: flex-end
+      margin-top: 2em
+      &:hover
+        svg
+          stroke-width: 3
+        p
+          font-weight: 600
+
+      @media all and (max-width: 450px)
+        +flex(row, center, space-evenly)
+        width: 100%
+
+      svg 
+        height: 20px
+        width: 20px
+
+      p
+        font-size: 1em
+        margin: 0 0 0 .5em
+
+        @media all and (max-width: 450px)
+          margin-left: -1.5em
+
+.story-block
+  @extend %story-block
+
+.preview
+  +flex(row, center, space-between)
+  height: 350px
+  overflow: hidden
+  &:nth-of-type(odd)
+    flex-direction: row-reverse
+
+  @media all and (max-width: 940px) 
+    +flex(column, stretch, flex-start)
+    height: auto
+    &:nth-of-type(odd)
+      flex-direction: column
+
+  .img-container
+    +flex(row, flex-end, center)
+    overflow: hidden
+    width: 40%
+
+    @media all and (max-width: 940px) 
+      height: 40%
+      width: 100%
+
+      img
+        max-width: 100%
+        height: auto
+    img
+      width: 175%
+
+  figcaption
+    padding: 2em
+    width: 60%
+
+    .story-block-blurb
+      height: 72.5px
+      overflow: hidden
+
+.full
+  +flex(column, center, center)
+
+  .img-container
+    +flex(row, center, center)
+    width: 100%
+
+    img
+      width: 100%
+    
+  figcaption
+    padding: 2em
+
+    .story-block-blurb
+      height: auto
+      overflow: auto

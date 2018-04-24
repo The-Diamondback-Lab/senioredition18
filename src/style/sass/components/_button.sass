@@ -1,0 +1,19 @@
+/* BUTTON STYLES - BUTTON.SASS */
+
+%btn
+  +setBtnBkgAndHover($dbk-red)
+  border-radius: 2em
+  color: $white
+  font-size: .95em
+  margin: 1em 0 0 0
+  padding: .75em 3em
+
+%btn-icon
+  @extend %btn
+  +flex(row, center, space-between)
+
+.btn
+  @extend %btn
+
+.btn-icon
+  @extend %btn-icon

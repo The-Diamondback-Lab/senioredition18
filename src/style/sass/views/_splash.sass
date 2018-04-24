@@ -1,0 +1,52 @@
+/* SPLASH SECTION STYLES - SPLASH.SASS */
+
+#splash
+  +flex(row, center, center)
+  +setBkgImg('../assets/img/triangle.png', bottom right, contain)
+  height: 100vh
+
+  @media all and (max-width: 940px)
+    background:
+      color: $dbk-red
+      image: none
+
+  .wrapper
+    +flex(column, flex-start, center)
+
+    .sub-heading, .heading, .blurb
+      margin: 0
+
+    .sub-heading, .heading
+      text-transform: uppercase
+
+    .sub-heading
+      color: $gray
+      font-size: 1.5em
+      @media all and (max-width: 940px)
+        color: $white
+
+      @media all and (max-width: 665px)
+        font-size: 1.25em
+
+    .heading
+      font-size: 5em
+
+    .blurb
+      color: $black-faded
+      font:
+        size: 1.125em
+        weight: 600
+      width: 45%
+
+      @media all and (max-width: 940px)
+        width: 100%
+
+    a
+      @media all and (max-width: 940px)
+        background-color: $black
+        color: $white
+        margin-top: 2em
+
+      @media all and (max-width: 450px)
+        text-align: center
+        width: 100%
