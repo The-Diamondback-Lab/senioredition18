@@ -12,11 +12,15 @@ import './style/app.min.css';
 import Splash from './views/Splash.jsx';
 import Stories from './views/Stories.jsx';
 
+//component imports
+import Footer from './components/Footer.jsx';
+
 const App = () => {
   return (
     <div id="app-container">
       <Splash />
       <Stories />
+      <Footer />
     </div>
   );
 };
