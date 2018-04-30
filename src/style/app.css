@@ -419,6 +419,9 @@ footer {
       width: 100%; }
       #stories #stories-wrapper .ad-container .ad-img {
         width: 20%; }
+      #stories #stories-wrapper .ad-container img {
+        width: 100%;
+        height: 100%; }
     #stories #stories-wrapper .story-block-container {
       display: -webkit-box !important;
       display: -ms-flexbox !important;

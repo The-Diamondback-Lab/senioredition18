@@ -1,9 +1,6 @@
 //react imports
 import React from 'react';
 
-//google analytics
-import Analytics from 'react-router-ga';
-
 //style imports
 import './style/normalize.min.css';
 import './style/app.min.css';
