@@ -40,14 +40,14 @@ export default class Button extends Component {
   };
 
   render() {
-    let style = this.props.style !== undefined ? this.props.style : '';
-    let btnStyle = !this.props.icon ? 'btn ' + style : 'btn-icon ' + style;
+    let style = this.props.style !== undefined ? this.props.style : {};
+    let btnStyle = !this.props.icon ? 'btn' : 'btn-icon';
     let btn = !this.props.icon ? (
-      <a href={this.props.to} className={btnStyle}>
+      <a href={this.props.to} style={style} className={btnStyle}>
         {this.props.children}
       </a>
     ) : (
-      <button className={btnStyle} onClick={this.onClick}>
+      <button style={style} className={btnStyle} onClick={this.onClick}>
         {this.icon}
         <p>{this.text}</p>
       </button>

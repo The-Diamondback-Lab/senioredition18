@@ -23,22 +23,22 @@ export default class Stories extends Component {
   render() {
 
     var ads1 = (<div className="ad-container">
-                  <a className="ad-img" href="http://bsos.umd.edu" target="_blank"><img src={img1} alt="" /></a>
-                  <a className="ad-img"  href="https://eng.umd.edu" target="_blank"><img src={img2} alt="" /></a>
-                  <a className="ad-img"  href="https://www.rhsmith.umd.edu" target="_blank"><img src={img3} alt="" /></a>
-                  <a className="ad-img"  href="https://dmgs.org/" target="_blank"><img src={img4} alt="" /></a>
-                  <a className="ad-img"  href="http://go.umd.edu/seniors" target="_blank"><img src={img5} alt="" /></a>
+                  <a className="ad-img" href="http://bsos.umd.edu" target="_blank" rel="noopener noreferrer"><img src={img1} alt="" /></a>
+                  <a className="ad-img"  href="https://eng.umd.edu" target="_blank" rel="noopener noreferrer"><img src={img2} alt="" /></a>
+                  <a className="ad-img"  href="https://www.rhsmith.umd.edu" target="_blank" rel="noopener noreferrer"><img src={img3} alt="" /></a>
+                  <a className="ad-img"  href="https://dmgs.org/" target="_blank" rel="noopener noreferrer"><img src={img4} alt="" /></a>
+                  <a className="ad-img"  href="http://go.umd.edu/seniors" target="_blank" rel="noopener noreferrer"><img src={img5} alt="" /></a>
                 </div>);
 
     var ads2 = (<div className="ad-container">
-                  <a className="ad-img" href="http://go.umd.edu/seniors" target="_blank"><img src={img6} alt="" /></a>
-                  <a className="ad-img"  href="https://geog.umd.edu/landing/Graduate" target="_blank"><img src={img7} alt="" /></a>
-                  <a className="ad-img"  href="http://www.selfstorageplus.com/self_storage/silver_spring_md/zip_20904/self_storage_plus/5157" target="_blank"><img src={img8} alt="" /></a>
-                  <a className="ad-img"  href="http://www.masters.econ.umd.edu" target="_blank"><img src={img9} alt="" /></a>
-                  <a className="ad-img"  href="http://psyc.umd.edu/graduate/mps-clinical-psychological-science" target="_blank"><img src={img10} alt="" /></a>
+                  <a className="ad-img" href="http://go.umd.edu/seniors" target="_blank" rel="noopener noreferrer"><img src={img6} alt="" /></a>
+                  <a className="ad-img"  href="https://geog.umd.edu/landing/Graduate" target="_blank" rel="noopener noreferrer"><img src={img7} alt="" /></a>
+                  <a className="ad-img"  href="http://www.selfstorageplus.com/self_storage/silver_spring_md/zip_20904/self_storage_plus/5157" target="_blank" rel="noopener noreferrer"><img src={img8} alt="" /></a>
+                  <a className="ad-img"  href="http://www.masters.econ.umd.edu" target="_blank" rel="noopener noreferrer"><img src={img9} alt="" /></a>
+                  <a className="ad-img"  href="http://psyc.umd.edu/graduate/mps-clinical-psychological-science" target="_blank" rel="noopener noreferrer"><img src={img10} alt="" /></a>
                 </div>);
 
-    if (Math.round(Math.random()) == 1){
+    if (Math.round(Math.random()) === 1){
       var temp = ads1;
       ads1 = ads2;
       ads2 = temp;

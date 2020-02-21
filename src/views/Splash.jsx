@@ -18,7 +18,7 @@ export default class Splash extends Component {
             restaurants, clubs, construction and more in a reflection of the
             last four years.
           </p>
-          <Button to={'#stories'} style={'animated infinite pulse'}>
+          <Button to={'#stories'} style={{animation: 'pulse 3s infinite'}}>
             View Stories
           </Button>
         </div>

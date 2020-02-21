@@ -17,7 +17,6 @@ const ChevronDown = ({ color }) => {
       stroke={color}
       strokeWidth="2"
       strokeLinecap="round"
-      strokeLinecap="round"
       className="feather feather-chevron-down"
     >
       <polyline points="6 9 12 15 18 9" />
@@ -74,7 +73,6 @@ const Clock = ({ color }) => {
       stroke={color}
       strokeWidth="2"
       strokeLinecap="round"
-      strokeLinecap="round"
       className="feather feather-chevron-down"
     >
       <polyline points="6 9 12 15 18 9" />
@@ -113,7 +111,6 @@ const Globe = ({ color }) => {
       stroke={color}
       strokeWidth="2"
       strokeLinecap="round"
-      strokeLinecap="round"
       className="feather feather-globe"
     >
       <circle cx="12" cy="12" r="10" />
@@ -133,7 +130,6 @@ const Grid = ({ color }) => {
       fill="none"
       stroke={color}
       strokeWidth="2"
-      strokeLinecap="round"
       strokeLinecap="round"
       classNameName="feather feather-grid"
     >
@@ -156,7 +152,6 @@ const HelpCircle = ({ color }) => {
       stroke={color}
       strokeWidth="2"
       strokeLinecap="round"
-      strokeLinecap="round"
       classNameName="feather feather-help-circle"
     >
       <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
@@ -177,7 +172,6 @@ const Home = ({ color }) => {
       stroke={color}
       strokeWidth="2"
       strokeLinecap="round"
-      strokeLinecap="round"
       className="feather feather-home"
     >
       <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
@@ -196,7 +190,6 @@ const Info = ({ color }) => {
       fill="none"
       stroke={color}
       strokeWidth="2"
-      strokeLinecap="round"
       strokeLinecap="round"
       className="feather feather-info"
     >
@@ -218,7 +211,6 @@ const Link = ({ color }) => {
       stroke={color}
       strokeWidth="2"
       strokeLinecap="round"
-      strokeLinecap="round"
       className="feather feather-link"
     >
       <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
@@ -237,7 +229,6 @@ const Menu = ({ color }) => {
       fill="none"
       stroke={color}
       strokeWidth="2"
-      strokeLinecap="round"
       strokeLinecap="round"
       className="feather feather-menu"
     >
@@ -258,7 +249,6 @@ const MoreVertical = ({ color }) => {
       fill="none"
       stroke={color}
       strokeWidth="2"
-      strokeLinecap="round"
       strokeLinecap="round"
       className="feather feather-more-vertical"
     >
@@ -300,7 +290,6 @@ const Search = ({ color }) => {
       stroke={color}
       strokeWidth="2"
       strokeLinecap="round"
-      strokeLinecap="round"
       className="feather feather-search"
     >
       <circle cx="11" cy="11" r="8" />
@@ -320,7 +309,6 @@ const User = ({ color }) => {
       stroke={color}
       strokeWidth="2"
       strokeLinecap="round"
-      strokeLinecap="round"
       className="feather feather-user"
     >
       <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
@@ -339,7 +327,6 @@ const X = ({ color }) => {
       fill="none"
       stroke={color}
       strokeWidth="2"
-      strokeLinecap="round"
       strokeLinecap="round"
       className="feather feather-x"
     >
